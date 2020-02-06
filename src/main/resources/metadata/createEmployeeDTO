@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "address": {
+      "type": "object",
+      "properties": {
+        "presentAddress": {
+          "type": "string"
+        },
+        "residentialAddress": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "presentAddress",
+        "residentialAddress"
+      ]
+    },
+    "age": {
+      "type": "integer"
+    },
+    "contactNo": {
+      "type": "string"
+    },
+    "department": {
+      "type": "string"
+    },
+    "designation": {
+      "type": "string"
+    },
+    "dob": {
+      "type": "string"
+    },
+    "doj": {
+      "type": "string"
+    },
+    "ename": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "address",
+    "age",
+    "contactNo",
+    "department",
+    "designation",
+    "dob",
+    "doj",
+    "ename",
+    "gender"
+  ]
+}

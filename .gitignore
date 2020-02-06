@@ -1,0 +1,33 @@
+/.apt_generated/
+# maven
+target/
+
+# eclipse
+.classpath
+.settings/
+.project
+.factorypath
+
+# Mule Studio
+.studio
+demo/**/catalog
+
+# Linux
+bin/
+
+# Credential file for individual developer
+# which should NOT be committed
+ec2-automation-credentials.properties
+interop-testdata-override.xml
+interop-testdata.xml
+
+#sonar
+.sonar/
+sonar-project.properties
+
+# IDEA
+.idea/
+*.iml
+
+# log config
+log4j2.xml

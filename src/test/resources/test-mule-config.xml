@@ -1,0 +1,19 @@
+<mule xmlns="http://www.mulesoft.org/schema/mule/core"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:employee-api="http://www.mulesoft.org/schema/mule/employee-api"
+      xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+          http://www.mulesoft.org/schema/mule/employee-api http://www.mulesoft.org/schema/mule/employee-api/current/mule-employee-api.xsd">
+
+    <employee-api:config name="config" configId="configId">
+        <employee-api:connection requiredParameter="aValue" />
+    </employee-api:config>
+
+    <flow name="sayHiFlow">
+        <employee-api:say-hi person="Mariano Gonzalez"/>
+    </flow>
+
+    <flow name="retrieveInfoFlow">
+        <employee-api:retrieve-info config-ref="config"/>
+    </flow>
+
+</mule>
